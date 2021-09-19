@@ -5,7 +5,7 @@
       <v-col class="d-lg-flex d-none" cols="3">
         <NavigationDesktop/>
       </v-col>
-      <v-col lg="8" md="10">
+      <v-col lg="9" md="12">
         <router-view></router-view>
       </v-col>
     </v-row>
@@ -25,3 +25,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+  @import url('../public/font/fontiran.css');
+  body{
+    font-family: IRANSans !important;
+  }
+</style>
