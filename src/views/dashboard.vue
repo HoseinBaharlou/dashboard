@@ -8,8 +8,5 @@ export default ({
     setup() {
         
     },
-    components:{
-
-    }
 })
 </script>
