@@ -1,7 +1,7 @@
 <template>
       <div>
         <div class="d-block d-lg-none">
-          <v-app-bar light elevation="0">
+          <v-app-bar light elevation="0" >
             <v-app-bar-nav-icon class="d-lg-none d-block" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
           </v-app-bar>
           <v-navigation-drawer class="danger" app right overlay-opacity="0" text stateless v-model="drawer">
@@ -33,3 +33,8 @@ export default ({
     }
 })
 </script>
+<style scoped>
+  .v-navigation-drawer{
+    z-index: 9999 !important;
+  }
+</style>
