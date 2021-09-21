@@ -2,19 +2,31 @@
     <v-app>
         <v-container>
             <v-row>
+                <!-- profile statistics -->
                 <v-col md="8" cols="12" class="mt-5">
                     <ProfileStatistics />
                 </v-col>
+                <!-- statistics -->
                 <v-col md="8" cols="12" class="mt-5">
                     <Statistics />
                 </v-col>
+                <!-- profile desktop -->
                 <v-col md="4" class="text-center mt-10">
-                    <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/1.jpg' size='60'/>
+                    <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/1.jpg' size='60' class="justify-center"/>
                 </v-col>
-                <v-col md="8" cols="12" class="mt-5">
+                <!-- profile visit -->
+                <v-col md="9" cols="12" class="mt-5">
                     <ProfileVisit />
                     <BarChart />
                 </v-col>
+                <!-- Recent Messages desktop -->
+                <v-col md="3" class="mt-5">
+                    <RecentMessages />
+                    <div class="text-center mt-5 py-4">
+                        <v-btn x-large depressed text block>شروع گفتگو</v-btn>
+                    </div>
+                </v-col>
+                <!-- area chart -->
                 <v-col md="8" cols="12">
                     <v-row>
                         <v-col md="4" cols="12">
@@ -44,6 +56,7 @@ import BarChart from '../components/chart/bar.vue'
 import AreaChart from '../components/chart/area.vue'
 import CustomTitle from '../components/dashboard/custom_title.vue'
 import LatestComment from '../components/dashboard/LatestComment.vue'
+import RecentMessages from '../components/dashboard/RecentMessages.vue'
 export default ({
     name:'Dashboard',
     components:{
@@ -54,7 +67,8 @@ export default ({
         AreaChart,
         BarChart,
         CustomTitle,
-        LatestComment
+        LatestComment,
+        RecentMessages,
     },
 
 })
