@@ -2,46 +2,60 @@
     <v-app>
         <v-container>
             <v-row>
-                <!-- profile statistics -->
                 <v-col md="8" cols="12" class="mt-5">
                     <ProfileStatistics />
                 </v-col>
-                <!-- statistics -->
-                <v-col md="8" cols="12" class="mt-5">
-                    <Statistics />
-                </v-col>
-                <!-- profile desktop -->
-                <v-col md="4" class="text-center mt-10">
-                    <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/1.jpg' size='60' class="justify-center"/>
-                </v-col>
-                <!-- profile visit -->
-                <v-col md="9" cols="12" class="mt-5">
-                    <ProfileVisit />
-                    <BarChart />
-                </v-col>
-                <!-- Recent Messages desktop -->
-                <v-col md="3" class="mt-5">
-                    <RecentMessages />
-                    <div class="text-center mt-5 py-4">
-                        <v-btn x-large depressed text block>شروع گفتگو</v-btn>
-                    </div>
-                </v-col>
-                <!-- area chart -->
                 <v-col md="8" cols="12">
                     <v-row>
-                        <v-col md="4" cols="12">
-                            <ProfileVisit />
-                            <CustomTitle ColorFill='#5350e9' :title="['اروپا','862']" class="mt-5"/>
-                            <AreaChart colorline="#5350e9" fillchart="#5350e9" height="80"/>
-                            <CustomTitle ColorFill='#008b75' :title="['آمریکا','375']" class="mt-5"/>           
-                            <AreaChart colorline="#008b75" fillchart="#008b75" height="80"/>
-                            <CustomTitle ColorFill='#dc3545' :title="['اندونزی','1025']" class="mt-5"/>
-                            <AreaChart colorline="#dc3545" fillchart="#dc3545" height="80"/>
+                        <v-col cols="12" class="mt-5">
+                            <Statistics />
                         </v-col>
-                        <v-col md="8" cols="12">
-                            <LatestComment />
+                        <v-col cols="12" class="mt-5">
+                            <ProfileVisit />
+                            <BarChart />
+                        </v-col>
+                        <v-col cols="12">
+                            <v-row>
+                                <v-col md="4" cols="12">
+                                    <ProfileVisit />
+                                    <CustomTitle ColorFill='#5350e9' :title="['اروپا','862']" class="mt-5"/>
+                                    <AreaChart colorline="#5350e9" fillchart="#5350e9" height="80"/>
+                                    <CustomTitle ColorFill='#008b75' :title="['آمریکا','375']" class="mt-5"/>           
+                                    <AreaChart colorline="#008b75" fillchart="#008b75" height="80"/>
+                                    <CustomTitle ColorFill='#dc3545' :title="['اندونزی','1025']" class="mt-5"/>
+                                    <AreaChart colorline="#dc3545" fillchart="#dc3545" height="80"/>
+                                </v-col>
+                                <v-col md="8" cols="12">
+                                    <LatestComment />
+                                </v-col>
+                            </v-row>
                         </v-col>
                     </v-row>
+                </v-col>
+                <!-- profile statistics -->
+                
+                <!-- statistics -->
+                
+                
+                <!-- profile visit -->
+                
+                
+                <!-- area chart -->
+                <v-col md="3" cols="12" class="mt-10">
+                    <!-- profile  -->
+                    <div class="text-center">
+                        <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/1.jpg' size='60' class="justify-center"/>
+                    </div>
+                    <!-- Recent Messages desktop -->
+                    <div class="mt-16 pt-10">
+                        <RecentMessages class="" />
+                        <div class="text-center mt-5 py-4">
+                            <v-btn x-large depressed text block>شروع گفتگو</v-btn>
+                        </div>
+                    </div>
+                    <div>
+                        <DonutChart/>
+                    </div>
                 </v-col>
             </v-row>
         </v-container>
@@ -57,6 +71,7 @@ import AreaChart from '../components/chart/area.vue'
 import CustomTitle from '../components/dashboard/custom_title.vue'
 import LatestComment from '../components/dashboard/LatestComment.vue'
 import RecentMessages from '../components/dashboard/RecentMessages.vue'
+import DonutChart from '../components/chart/donut.vue'
 export default ({
     name:'Dashboard',
     components:{
@@ -69,6 +84,7 @@ export default ({
         CustomTitle,
         LatestComment,
         RecentMessages,
+        DonutChart
     },
 
 })
