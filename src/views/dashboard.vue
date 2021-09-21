@@ -11,7 +11,7 @@
                 </v-col>
                 <v-col md="8" cols="12">
                     <v-row>
-                        <v-col md="5" cols="12">
+                        <v-col md="4" cols="12">
                             <ProfileVisit />
                             <CustomTitle ColorFill='#5350e9' :title="['اروپا','862']" class="mt-5"/>
                             <AreaChart colorline="#5350e9" fillchart="#5350e9" height="80"/>
@@ -20,8 +20,8 @@
                             <CustomTitle ColorFill='#dc3545' :title="['اندونزی','1025']" class="mt-5"/>
                             <AreaChart colorline="#dc3545" fillchart="#dc3545" height="80"/>
                         </v-col>
-                        <v-col md="7" cols="12">
-                            
+                        <v-col md="8" cols="12">
+                            <LatestComment />
                         </v-col>
                     </v-row>
                 </v-col>
@@ -35,6 +35,7 @@ import ProfileVisit from '../components/dashboard/visit_profile.vue'
 import BarChart from '../components/chart/bar.vue'
 import AreaChart from '../components/chart/area.vue'
 import CustomTitle from '../components/dashboard/custom_title.vue'
+import LatestComment from '../components/dashboard/LatestComment.vue'
 export default ({
     name:'Dashboard',
     components:{
@@ -42,7 +43,8 @@ export default ({
         ProfileVisit,
         AreaChart,
         BarChart,
-        CustomTitle
+        CustomTitle,
+        LatestComment
     },
 
 })

@@ -1,5 +1,5 @@
 <template>
-    <apexchart class="mt-5" type="bar" :options="options" height="400" :series="series"></apexchart>
+    <apexchart class="mt-5" type="bar" :options="options" height="300" :series="series"></apexchart>
 </template>
 <script>
 export default {

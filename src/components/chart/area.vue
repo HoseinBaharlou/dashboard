@@ -57,9 +57,12 @@ export default {
                     width: 2,
                 },
                 legend: {
-              position: 'top',
-              horizontalAlign: 'left'
-            },
+                    position: 'top',
+                    horizontalAlign: 'left'
+                },
+                grid:{
+                    show:false
+                }
             },
             series: [{
                 name:'ردیف',
