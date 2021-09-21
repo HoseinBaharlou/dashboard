@@ -6,6 +6,12 @@
                     <ProfileStatistics />
                 </v-col>
                 <v-col md="8" cols="12" class="mt-5">
+                    <Statistics />
+                </v-col>
+                <v-col md="4" class="text-center mt-10">
+                    <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/1.jpg' size='60'/>
+                </v-col>
+                <v-col md="8" cols="12" class="mt-5">
                     <ProfileVisit />
                     <BarChart />
                 </v-col>
@@ -31,6 +37,8 @@
 </template>
 <script>
 import ProfileStatistics from '../components/dashboard/profile_statistics.vue'
+import Statistics from '../components/dashboard/statistics.vue'
+import profile from '../components/dashboard/profile.vue'
 import ProfileVisit from '../components/dashboard/visit_profile.vue'
 import BarChart from '../components/chart/bar.vue'
 import AreaChart from '../components/chart/area.vue'
@@ -40,6 +48,8 @@ export default ({
     name:'Dashboard',
     components:{
         ProfileStatistics,
+        Statistics,
+        profile,
         ProfileVisit,
         AreaChart,
         BarChart,

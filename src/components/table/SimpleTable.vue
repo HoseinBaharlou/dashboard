@@ -19,7 +19,7 @@
                         <v-col cols="5">
                             <td>
                                 <v-avatar>
-                                    <img :src="data.image" height="32" width="32" class="rounded-circle">
+                                    <img :src="data.image" :alt="data.name" height="32" width="32" class="rounded-circle">
                                 </v-avatar>
                                 <span class="mx-2 grey--text">{{data.name}}</span>
                             </td>
