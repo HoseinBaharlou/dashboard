@@ -9,6 +9,7 @@
 <script>
 import profile from '../dashboard/profile.vue'
 export default ({
+    name:'RecentMessages',
     data() {
         return{
             DataObj:[

@@ -7,6 +7,7 @@
 <script>
 import SimpleTable from '../table/SimpleTable.vue'
 export default ({
+    name:'LatestComments',
     data() {
         return{
             data:[

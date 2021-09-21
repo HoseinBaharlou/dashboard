@@ -21,6 +21,7 @@
 </template>
 <script>
 export default {
+    name:'statistics',
     data(){
         return{
             statistics:[

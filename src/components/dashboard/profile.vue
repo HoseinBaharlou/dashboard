@@ -11,6 +11,7 @@
 </template>
 <script>
 export default ({
+    name:'profile',
     props:['icon','size','Title','Subtitle']
 })
 </script>
