@@ -13,7 +13,7 @@ export default {
                 plotOptions: {
                     bar: {
                         dataLabels: {
-                            position: 'none', // top, center, bottom
+                            position: 'none',
                         },
                     }
                 },
