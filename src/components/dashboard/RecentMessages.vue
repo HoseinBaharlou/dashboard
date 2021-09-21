@@ -13,9 +13,9 @@ export default ({
     data() {
         return{
             DataObj:[
-                {'icon':'icon/1.jpg','Title':'رضا میرزایی','Subtitle':'@reza'},
-                {'icon':'icon/2.jpg','Title':'سریا قمبر پور','Subtitle':'@ghambarnezad'},
-                {'icon':'icon/5.jpg','Title':'حسین بت شکن','Subtitle':'@hosein'}
+                {'icon':'icon/2.jpg','Title':'رضا میرزایی','Subtitle':'@reza'},
+                {'icon':'icon/1.jpg','Title':'سریا قمبر پور','Subtitle':'@ghambarnezad'},
+                {'icon':'icon/5.jpg','Title':'فاطمه بت شکن','Subtitle':'@fateme'}
             ]
         }
     },

@@ -41,7 +41,7 @@
                 <v-col md="4" cols="12" class="mt-10">
                     <!-- profile  -->
                     <div class="text-center">
-                        <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/1.jpg' size='60' class="justify-center"/>
+                        <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/2.jpg' size='60' class="justify-center"/>
                     </div>
                     <!-- Recent Messages desktop -->
                     <div class="mt-16 pt-10">
