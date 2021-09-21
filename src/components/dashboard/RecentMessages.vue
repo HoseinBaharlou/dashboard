@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4 class="blue-grey--text darken-4">پیام های اخیر</h4>
+        <h4 class="blue-grey--text darken-4 title">پیام های اخیر</h4>
         <div class="mt-8" v-for="Data in DataObj" :key="Data.Title">
             <profile size='48' :icon='Data.icon' :Title='Data.Title' :Subtitle='Data.Subtitle'/>
         </div>

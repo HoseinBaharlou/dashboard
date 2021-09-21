@@ -38,7 +38,7 @@
                         </v-col>
                     </v-row>
                 </v-col>                
-                <v-col md="3" cols="12" class="mt-10">
+                <v-col md="4" cols="12" class="mt-10">
                     <!-- profile  -->
                     <div class="text-center">
                         <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/1.jpg' size='60' class="justify-center"/>
@@ -51,8 +51,8 @@
                         </div>
                     </div>
                     <!-- donut chart -->
-                    <div>
-                        <DonutChart/>
+                    <div class="mt-5">
+                        <VisitorsProfile />
                     </div>
                 </v-col>
             </v-row>
@@ -69,7 +69,7 @@ import AreaChart from '../components/chart/area.vue'
 import CustomTitle from '../components/dashboard/custom_title.vue'
 import LatestComment from '../components/dashboard/LatestComment.vue'
 import RecentMessages from '../components/dashboard/RecentMessages.vue'
-import DonutChart from '../components/chart/donut.vue'
+import VisitorsProfile from '../components/dashboard/VisitorsProfile.vue'
 export default ({
     name:'Dashboard',
     components:{
@@ -82,7 +82,7 @@ export default ({
         CustomTitle,
         LatestComment,
         RecentMessages,
-        DonutChart
+        VisitorsProfile
     },
 
 })

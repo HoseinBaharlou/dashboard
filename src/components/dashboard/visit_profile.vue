@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4 class="blue-grey--text darken-4">بازدید از پروفایل</h4>
+        <h4 class="blue-grey--text darken-4 title">بازدید از پروفایل</h4>
     </div>
 </template>
 <script>
