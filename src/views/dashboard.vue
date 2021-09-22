@@ -44,7 +44,7 @@
                         <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/2.jpg' size='60' class="justify-center"/>
                     </div>
                     <!-- Recent Messages desktop -->
-                    <div class="mt-16 pt-10">
+                    <div class="mt-16 py-10 py-xl-5">
                         <RecentMessages class="" />
                         <div class="text-center mt-5 py-4">
                             <v-btn x-large depressed text block>شروع گفتگو</v-btn>
