@@ -2,6 +2,7 @@
     <apexchart class="mt-5" type="bar" :options="options" height="300" :series="series"></apexchart>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
     name:'bar',
     data(){
@@ -18,7 +19,7 @@ export default {
                     }
                 },
                 xaxis: {
-                    categories: ["ژانویه", "فوریه", "مارس", "آوریل", "مه", "ژوئن", "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"],
+                    categories: [],
                 },
                 fill:{
                     colors:['#435ebe']
@@ -26,9 +27,16 @@ export default {
             },
             series: [{
                 name:'حراجی',
-                data: [9, 20, 30, 20, 10,20,30,20,10,20,30,20]
+                data: []
             }],
         }
     },
+    computed:{
+        ...mapState(['BarChart'])
+    },
+    created:function(){
+        this.series[0].data = this.BarChart.data
+        this.options.xaxis.categories = this.BarChart.categories
+    }
 }
 </script>

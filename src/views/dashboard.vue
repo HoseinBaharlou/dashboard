@@ -48,7 +48,7 @@
                         <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/2.jpg' size='60' class="justify-center"/>
                     </v-card>
                     <!-- Recent Messages desktop -->
-                    <v-card class="mt-9 py-5 mt-lg-3">
+                    <v-card class="mt-15 mt-lg-8">
                         <RecentMessages />
                     </v-card>
                     <!-- start conversation -->

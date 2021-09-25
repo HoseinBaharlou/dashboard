@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar light elevation="0" app>
-      <v-app-bar-nav-icon @click.stop="(drawer = !drawer) && (mini = !mini)" v-show="drawer == false"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="(drawer = !drawer) && (drawer == true ? mini=true : mini=false)"></v-app-bar-nav-icon>
     </v-app-bar>
     <v-navigation-drawer class="danger" app right overlay-opacity="0" text stateless v-model="drawer" :mini-variant.sync="mini">
       <div class="my-10 mx-4 d-flex justify-space-between">
@@ -16,14 +16,12 @@
 </template>
 <script>
 import Vlist from './Vlist.vue'
+import {mapState} from 'vuex'
 export default ({
     data() {
         return{
           drawer:false,
           mini: false,
-          links:[
-            {'icon':'mdi-view-dashboard','title':'پنل مدیریت','router':'/'}
-          ]
         }
     },
     created:function(){
@@ -34,6 +32,9 @@ export default ({
     },
     components:{
       Vlist
+    },
+    computed:{
+      ...mapState(['links'])
     }
 })
 </script>

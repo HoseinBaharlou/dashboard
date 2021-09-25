@@ -20,17 +20,16 @@
     </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
     name:'statistics',
     data(){
         return{
-            statistics:[
-                {'color':'deep-purple lighten-2','icon':'mdi-eye','title':'تعداد نمایش پروفایل','subtitle':'120.000'},
-                {'color':'blue lighten-2','icon':'mdi-account','title':'دنبال کنندگان','subtitle':'120.000'},
-                {'color':'green lighten-2','icon':'mdi-account-plus','title':'دنبال شوندگان','subtitle':'120.000'},
-                {'color':'deep-orange darken-1','icon':'mdi-bookmark-minus','title':'پیام ذخیره شده','subtitle':'120.000'}
-            ]
+            
         }
+    },
+    computed:{
+        ...mapState(['statistics'])
     }
 }
 </script>

@@ -4,6 +4,7 @@
     </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
     name:'area',
     props:{
@@ -33,7 +34,7 @@ export default {
                 },
                 xaxis: {
                     type: 'datetime',
-                    categories: ["2018-09-19T00:30:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"],
+                    categories: [55],
                     labels: {
                         show: false,
                     },    
@@ -66,9 +67,16 @@ export default {
             },
             series: [{
                 name:'ردیف',
-                data: [230,804,524,426,167,645,700]
+                data: []
             }],       
         }
-    }  
+    },
+    computed:{
+        ...mapState(['AreaChart'])
+    },
+    created:function(){
+        this.series[0].data = this.AreaChart[0].data
+        this.options.xaxis.categories = this.AreaChart[0].categories
+    }
 }
 </script>

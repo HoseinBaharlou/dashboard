@@ -4,6 +4,7 @@
     </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default ({
     name:'donutchart',
     data(){
@@ -13,7 +14,7 @@ export default ({
                 width:'100px',
                 height: 350,
                 type: 'donut',
-                labels: ["مرد", "زن"],
+                labels: [],
                 colors: ["#55c6e8", "#435ebe"],
                 legend:{
                     position:'bottom'
@@ -33,8 +34,15 @@ export default ({
                     }
                 }
             },
-            series: [70,30],
+            series: [],
         }    
+    },
+    computed:{
+        ...mapState(['donutchart'])
+    },
+    created:function(){
+        this.series = this.donutchart.data
+        this.chart.labels = this.donutchart.labels
     }
 })
 </script>
