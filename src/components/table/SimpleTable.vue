@@ -3,26 +3,20 @@
         <template v-slot:default>
             <thead>
                 <tr>
-                    <v-row>
-                        <v-col cols="5">
-                            <th class="text-right grey--text">نام</th>
-                        </v-col>
-                        <v-col cols="7">
-                            <th class="text-right grey--text">کامنت</th>
-                        </v-col>
-                    </v-row>
+                    <th class="text-right grey--text">نام</th>
+                    <th class="text-right grey--text">کامنت</th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="data in DataObj" :key="data.title">
                     <td class="pa-5">
                         <v-row align="center">
-                            <v-col cols="6">
+                            <v-col md="6" cols="12">
                                 <v-avatar>
                                     <img :src="data.image" :alt="data.name" height="32" width="32" class="rounded-circle">
                                 </v-avatar>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col md="6" cols="12" class="text-center">
                                 <span class="grey--text">{{data.name}}</span>
                             </v-col>
                         </v-row>

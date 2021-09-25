@@ -1,6 +1,6 @@
 <template>
-    <v-list>
-        <v-list-item v-for='link in links' :key="link.title" :to="link.router" class="rounded-lg mx-3 indigo white--text">
+    <v-list dense>
+        <v-list-item v-for='link in links' :key="link.title" :to="link.router" class="rounded-lg indigo white--text">
             <v-list-item-icon>
                 <v-icon>{{link.icon}}</v-icon>
             </v-list-item-icon>

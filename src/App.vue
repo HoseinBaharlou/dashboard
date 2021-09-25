@@ -26,7 +26,6 @@ export default {
 };
 </script>
 <style scoped>
-  @import url('../public/font/fontiran.css');
   body{
     font-family: IRANSans !important;
   }
