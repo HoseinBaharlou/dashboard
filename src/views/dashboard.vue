@@ -1,38 +1,42 @@
 <template>
     <v-app>
-        <v-container>
+        <v-container fluid>
             <v-row>
-                <!-- profile statistics -->
-                <v-col md="8" cols="12" class="mt-5">
-                    <ProfileStatistics />
-                </v-col>
-                <!--  -->
                 <v-col md="8" cols="12">
                     <v-row>
-                        <!-- statistics -->
+                        <!--profile statistics -->
                         <v-col cols="12" class="mt-5">
-                            <Statistics />
+                            <v-card>
+                                <ProfileStatistics />
+                                <Statistics />
+                            </v-card>
                         </v-col>
                         <!-- profile visit -->
                         <v-col cols="12" class="mt-5">
-                            <ProfileVisit />
-                            <BarChart />
+                            <v-card>
+                                <ProfileVisit />
+                                <BarChart />
+                            </v-card>
                         </v-col>
                         <!-- area chart -->
                         <v-col cols="12">
                             <v-row>
                                 <v-col md="4" cols="12">
-                                    <ProfileVisit />
-                                    <CustomTitle ColorFill='#5350e9' :title="['اروپا','862']" class="mt-5"/>
-                                    <AreaChart colorline="#5350e9" fillchart="#5350e9" height="80"/>
-                                    <CustomTitle ColorFill='#008b75' :title="['آمریکا','375']" class="mt-5"/>           
-                                    <AreaChart colorline="#008b75" fillchart="#008b75" height="80"/>
-                                    <CustomTitle ColorFill='#dc3545' :title="['اندونزی','1025']" class="mt-5"/>
-                                    <AreaChart colorline="#dc3545" fillchart="#dc3545" height="80"/>
+                                    <v-card>
+                                        <ProfileVisit />
+                                        <CustomTitle ColorFill='#5350e9' :title="['اروپا','862']" class="mt-5"/>
+                                        <AreaChart colorline="#5350e9" fillchart="#5350e9" height="80"/>
+                                        <CustomTitle ColorFill='#008b75' :title="['آمریکا','375']" class="mt-5"/>           
+                                        <AreaChart colorline="#008b75" fillchart="#008b75" height="80"/>
+                                        <CustomTitle ColorFill='#dc3545' :title="['اندونزی','1025']" class="mt-5"/>
+                                        <AreaChart colorline="#dc3545" fillchart="#dc3545" height="80"/>
+                                    </v-card>
                                 </v-col>
                                 <!-- LatestComment -->
                                 <v-col md="8" cols="12">
-                                    <LatestComment />
+                                    <v-card>
+                                        <LatestComment />
+                                    </v-card>
                                 </v-col>
                             </v-row>
                         </v-col>
@@ -40,20 +44,21 @@
                 </v-col>                
                 <v-col md="4" cols="12" class="mt-10">
                     <!-- profile  -->
-                    <div class="text-center">
+                    <v-card class="text-center mt-10 py-5">
                         <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/2.jpg' size='60' class="justify-center"/>
-                    </div>
+                    </v-card>
                     <!-- Recent Messages desktop -->
-                    <div class="mt-16 py-10 py-xl-5">
-                        <RecentMessages class="" />
-                        <div class="text-center mt-5 py-4">
-                            <v-btn x-large depressed text block>شروع گفتگو</v-btn>
-                        </div>
-                    </div>
+                    <v-card class="mt-9 py-5 mt-lg-3">
+                        <RecentMessages />
+                    </v-card>
+                    <!-- start conversation -->
+                    <v-card class="text-center mt-5 py-5">
+                        <v-btn x-large depressed text block>شروع گفتگو</v-btn>
+                    </v-card>
                     <!-- donut chart -->
-                    <div class="mt-5">
+                    <v-card class="mt-10 py-5">
                         <VisitorsProfile />
-                    </div>
+                    </v-card>
                 </v-col>
             </v-row>
         </v-container>

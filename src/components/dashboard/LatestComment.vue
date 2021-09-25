@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4 class="blue-grey--text darken-4">آخرین کامنت ها</h4>
+        <h4 class="blue-grey--text darken-4 title">آخرین کامنت ها</h4>
         <SimpleTable :DataObj='data' class="mt-5"/>
     </div>
 </template>
@@ -21,3 +21,4 @@ export default ({
     }
 })
 </script>
+

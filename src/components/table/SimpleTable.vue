@@ -15,21 +15,21 @@
             </thead>
             <tbody>
                 <tr v-for="data in DataObj" :key="data.title">
-                    <v-row class="ma-3">
-                        <v-col cols="5">
-                            <td>
+                    <td class="pa-5">
+                        <v-row align="center">
+                            <v-col cols="6">
                                 <v-avatar>
                                     <img :src="data.image" :alt="data.name" height="32" width="32" class="rounded-circle">
                                 </v-avatar>
-                                <span class="mx-2 grey--text">{{data.name}}</span>
-                            </td>
-                        </v-col>
-                        <v-col cols="7">
-                            <td class="grey--text">
-                                {{data.content}}
-                            </td>
-                        </v-col>
-                    </v-row>
+                            </v-col>
+                            <v-col cols="6">
+                                <span class="grey--text">{{data.name}}</span>
+                            </v-col>
+                        </v-row>
+                    </td>
+                    <td class="grey--text pa-5">
+                        {{data.content}}
+                    </td>
                 </tr>
             </tbody>
         </template>
