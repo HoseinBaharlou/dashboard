@@ -37,7 +37,11 @@ export default new Vuex.Store({
         donutchart:{
             labels: ["مرد", "زن"],
             data:[70,30]
-        }
+        },
+        ProfileMenu:[
+            {'icon':'mdi-account','title':'پروفایل من','router':'/'},
+            {'icon':'mdi-logout','title':'خروج از پنل','router':'/'},
+        ]
     }
   },
   mutations: {

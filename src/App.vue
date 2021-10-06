@@ -2,12 +2,12 @@
   <v-app>
     <v-main>
       <Header />
-      <v-row>
+      <v-row class="my-0">
         <v-col cols="12">
           <router-view></router-view>
-          <Footer class="mt-10"/>
         </v-col>
       </v-row>
+      <Footer class="mt-10"/>
     </v-main>
   </v-app>
 </template>
@@ -25,8 +25,8 @@ export default {
   }
 };
 </script>
-<style scoped>
-  body{
-    font-family: IRANSans !important;
+<style>
+  *{
+    font-family: 'Shabnam',cursive ;
   }
 </style>

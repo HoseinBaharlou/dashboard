@@ -13,7 +13,7 @@
                         </v-col>
                         <!-- profile visit -->
                         <v-col cols="12" class="mt-5">
-                            <v-card>
+                            <v-card class="px-5">
                                 <ProfileVisit />
                                 <BarChart />
                             </v-card>
@@ -48,7 +48,7 @@
                         <profile Title="حسین بهارلو" Subtitle='@hossinbaharlou' icon='icon/2.jpg' size='60' class="justify-center"/>
                     </v-card>
                     <!-- Recent Messages desktop -->
-                    <v-card class="mt-15 mt-lg-8">
+                    <v-card class="mt-15 mt-lg-16">
                         <RecentMessages />
                     </v-card>
                     <!-- start conversation -->

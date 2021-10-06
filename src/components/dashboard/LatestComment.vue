@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h4 class="blue-grey--text darken-4 title">آخرین کامنت ها</h4>
-        <SimpleTable :DataObj='LatestComment' class="mt-5"/>
+        <h4 class="blue-grey--text darken-4 title text-center pt-2">آخرین کامنت ها</h4>
+        <SimpleTable :DataObj='LatestComment' class="mt-3"/>
     </div>
 </template>
 <script>

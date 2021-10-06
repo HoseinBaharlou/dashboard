@@ -1,6 +1,6 @@
 <template>
     <v-footer>
-        <v-row>
+        <v-row class="ma-0">
             <v-col cols="6">
                 <div>
                     <span class="blue-grey--text text--lighten-2">ساخته شده با</span>

@@ -9,17 +9,15 @@ export default {
         return{
             options: {
                 chart: {
-                    type:"bar"
+                    type:"bar",
                 },
-                plotOptions: {
-                    bar: {
-                        dataLabels: {
-                            position: 'none',
-                        },
-                    }
+                dataLabels: {
+                    enabled:false,
+                    
                 },
                 xaxis: {
                     categories: [],
+                    
                 },
                 fill:{
                     colors:['#435ebe']
@@ -40,3 +38,9 @@ export default {
     }
 }
 </script>
+<style>
+.apexcharts-tooltip {
+    background: #f3f3f3 !important;
+    color: #000000 !important;
+}
+</style>
